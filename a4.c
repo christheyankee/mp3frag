@@ -112,6 +112,8 @@ int main(int argc, char **argv) {
 		pthread_join(tids[i], NULL);
 	}
 	
+    
+
 	for(int i = 0; i < length_of_array; ++i) {
 		//fptr = fopen(argv[2], "wb");
 		//fwrite(file_contents[i], sizeof(char), size_of_array[i], fptr);
@@ -124,6 +126,7 @@ int main(int argc, char **argv) {
     free(dir);
 
     for (int i = 0; i < length; ++i) {
+        printf(file_contents[i]);
         free(file_contents[i]);
     }
 	
